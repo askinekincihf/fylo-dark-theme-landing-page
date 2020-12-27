@@ -10,6 +10,7 @@ body,
 html {
   background-color: hsl(218, 28%, 13%);
   color: #fff;
+  /* color: #000; */
   font-family: "Raleway", sans-serif;
 }
 
@@ -24,6 +25,10 @@ button {
   border-radius: 30px;
   width: 100%;
   font-size: 1.3rem;
+}
+
+button:hover {
+  background-color: coral;
 }
 
 /* Header */
@@ -197,9 +202,99 @@ h2 p {
   width: 2rem;
 }
 
-/* .bg-curvy-desktop {
+/* Section Four */
+
+.section-four {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.section-four img {
+  width: 2rem;
+  align-self: flex-start;
+}
+
+.section-four-box {
+  width: 75%;
+  background-color: hsl(219, 30%, 18%);
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.section-four-box p {
   width: 100%;
-} */
+  text-align: left;
+  /* padding: 1rem; */
+}
+
+.section-four-box img {
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.section-four-box-author {
+  display: flex;
+}
+
+.section-four-author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 0.5rem;
+}
+
+.section-four-author-info p {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+/* Section Five */
+
+.section-five {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-five-container {
+  background-color: hsl(219, 30%, 18%);
+  width: 70%;
+  padding: 2rem;
+}
+
+.section-five-container h3,
+p,
+input,
+button {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.section-five-container input {
+  text-align: left;
+  border: none;
+  border-radius: 25px;
+  text-indent: 1rem;
+}
+
+.section-five-input-btn button {
+  color: #fff;
+}
+
+.section-five-container input,
+button {
+  padding: 0.6rem 0;
+}
+
+/* Footer */
+
+Footer {
+  background-color: hsl(216, 53%, 9%);
+}
 
 @media screen and (max-width: 576px) {
   .logo {
@@ -286,9 +381,40 @@ h2 p {
   .section-three-content h3 {
     font-size: 1.4rem;
   }
+
+  /* Section Four */
+
+  .section-four {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .section-four-box {
+    width: 25%;
+  }
+
+  /* Section Five */
+
+  .section-five-container {
+    width: 50%;
+  }
+
+  .section-five-input-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section-five-input-btn button {
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    flex-shrink: 2;
+  }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
+  .section-five-input-btn button {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 1400px) {
