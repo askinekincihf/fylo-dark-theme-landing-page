@@ -214,6 +214,7 @@ h2 p {
 .section-four img {
   width: 2rem;
   align-self: flex-start;
+  padding-left: 1rem;
 }
 
 .section-four-box {
