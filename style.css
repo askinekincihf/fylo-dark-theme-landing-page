@@ -265,6 +265,10 @@ h2 p {
   padding: 2rem;
 }
 
+.section-five p {
+  opacity: 0.7;
+}
+
 .section-five-container h3,
 p,
 input,
@@ -292,9 +296,117 @@ button {
 
 /* Footer */
 
-Footer {
+footer {
   background-color: hsl(216, 53%, 9%);
+  margin-top: 3rem;
+  color: white;
+  width: 100%;
 }
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.footer-phone,
+.footer-mail,
+.footer-content {
+  margin-bottom: 1rem;
+}
+
+.footer-container-img img {
+  width: 10rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.footer-location p,
+.footer-mail p,
+.footer-phone p {
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+.footer-location,
+.footer-phone,
+.footer-mail {
+  display: flex;
+  align-items: center;
+}
+
+.footer-phone {
+  margin-bottom: 2rem;
+}
+
+.footer-location img,
+.footer-phone img,
+.footer-mail img {
+  width: 2rem;
+  cursor: pointer;
+}
+
+.footer-phone p,
+.footer-mail p {
+  margin: 0;
+  text-align: left;
+}
+
+.footer-mail {
+  margin-bottom: 3rem;
+}
+
+.footer-content-one,
+.footer-content-two {
+  margin-bottom: 2rem;
+  line-height: 2rem;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer-content li {
+  cursor: pointer;
+}
+
+footer li:hover {
+  font-size: 1.2rem;
+  color: bisque;
+}
+
+.footer-content a:hover {
+  font-size: 1.4rem;
+  color: coral;
+}
+
+.social-media ul {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a:hover {
+  font-size: 4rem;
+}
+
+.social-media img {
+  width: 2rem;
+  padding: 0.6rem;
+  margin-left: 2rem;
+  border: 1px solid rgb(151, 92, 92);
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+footer .attribution a {
+  color: rgb(221, 221, 83);
+  text-decoration: none;
+}
+
+/* Responsive Rules */
 
 @media screen and (max-width: 576px) {
   .logo {
@@ -408,6 +520,42 @@ Footer {
     font-size: 0.7rem;
     margin-left: 1rem;
     flex-shrink: 2;
+  }
+
+  /* Footer */
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-wrapper-container {
+    width: 20%;
+  }
+
+  .footer-location p,
+  .footer-phone p,
+  .footer-mail p {
+    width: 100%;
+  }
+
+  .footer-content {
+    width: 40rem;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 2rem;
+  }
+
+  .footer-wrapper p {
+    margin-left: 1rem;
+  }
+
+  .social-media img {
+    width: 1rem;
+  }
+
+  .social-media a:hover {
+    font-size: 3rem;
   }
 }
 
